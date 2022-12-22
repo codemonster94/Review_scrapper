@@ -20,7 +20,7 @@ See risk assessments on the end of file.
 
 ## Setting up the environment for the project
 
-###Installation 
+###  Installation 
 
 We create an environment for our project first of all. In order to create the environment,
 we run the following commands :
