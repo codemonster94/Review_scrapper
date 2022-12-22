@@ -1,5 +1,5 @@
 
-AMIS
+# AMIS
 
 Technologies here presented are selected considering the following items:
 Development time and ease of use
@@ -20,7 +20,7 @@ See risk assessments on the end of file.
 We create an environment for our project first of all. In order to create the environment,
 we run the following commands :
 
-To create a virtual environment in the lunux environment, we need to install the library that helps in installation :
+## To create a virtual environment in the lunux environment, we need to install the library that helps in installation :
 pip install virtualenv
 To use venv in your project, in your terminal, create a new project folder, cd to the
 project folder in your terminal, and run the following command:
@@ -41,18 +41,19 @@ below to install all your dependencies within their own copy of the project:
 pip install -r requirements.txt
 To deactivate your virtual environment, simply run the following code in the terminal:
 deactivate
-Instructions to run the program
+## Instructions to run the program
 Once all the prerequisites are installed, we can start running the program. Note that
 depending on the python versions pre-installed, the python commands may need to be
 python3 instead.
+  
 1. Open the terminal and navigate to the project directory containing all the files,
 including the Python file named main.py
 2. Run the command: python main.py
-Technologies to be used for development
-AMIS3Design
+## Technologies to be used for development
+### Design
 Figma
 Design tool for prototypes and wireframes of screens
-Frontend
+#### Frontend
 NEXT.js or Vue.js (Javascript)
 both are JavaScript frameworks NEXT.js runs on server side and Vue on client
 side(browser), to create user interface using JavaScript, HTML and CSS/SCSS and
@@ -63,32 +64,64 @@ achieve better SEO, faster page loading and API features
 💡 As PWA (Progressive Web App): An development method that allows
 users to install the web page as native application on device to benefit of
 faster loading and offline capabilities
-Database, API and Authentication
-Firebase Firestore and/or Real time database
-An highly scalable NoSQL Database, without requiring to code backend,
-makes development easier and faster
-Hosted on Google Servers with high uptime
-Firebase Authentication
-AMIS4User login and management
+#### Database, API and Authentication
+Firebase Firestore and/or Real time database: 
+A highly scalable NoSQL Database, without requiring to code backend,
+makes development easier and faster, hosted on Google Servers with high uptime
+##### Firebase Authentication :
+User login and management,
 integrated to database for access control to information
 Has with social login features
 e.g. “login with Google”, “login with facebook”, etc.
-Firebase Functions or Vercel Serverless functions
+##### Firebase Functions or Vercel Serverless functions:
 Capability to run functions as API endpoints, to execute actions that for
 example, manipulates database or send notifications
-Notifications
+##  Notifications
 Firebase Push Messaging
-Send push notifications to web and/or apps
-Twilio (SMS messaging, if required)
+Send push notifications to web and/or apps:
+Twilio (SMS messaging, if required): 
 Platform that allows send SMS notifications with code, starting from
 USD0,0079/sms (text) and USD0,0200 (with images) to send
-Hosting
+##### Hosting
 Any of client choice
 Recommended:
 Vercel (specially in case of NEXT.js)
 Google Firebase hosting
 Amazon AWS
-AMIS5Risk assessment
+## Risk assessment
+The following table proposes how this tech stack would help prevent some common
+cyber security risks: 
+##### Risk scenario: Ransom - attacker
+took over one
+application and
+edited code to
+redirect users to
+malicious website, Phishing targeting
+staff members.
+  
+##### Detection
+method : Number of users
+using the
+application
+suddenly
+changed, staff performed
+suspicious
+activity.
+  
+  ##### Mitigation method:
+  Application hosted online and distributed trough
+different cloud providers. In case of attack to one
+site, it can be taken down automatically or by staff
+while keeping the application alive.
+  
+  Users would be able to set a small security phrase,
+saved and loaded from browser storage and
+presented on application interface all the time to
+indicate that is using a legitimate website. The
+phrase cal also be saved to user account and visible
+on every notification sent.
+  
+  ##Risk assessment
 The following table proposes how this tech stack would help prevent some common
 cyber security risks
 Risk scenario Detection
@@ -121,11 +154,3 @@ phrase cal also be saved to user account and visible
 on every notification sent
 Additional ways of tackling risks to the
 system.
-Cyber security technologies that was implemented in the prototype solution include
-multi-factor authentication (MFA) via the use of a time-based one-time pin (OTP),
-and the encryption of user passwords using the combination of a randomly
-generated salt value and hashing. These techniques are used to verify and validate
-the user's identity and aim to prevent spoofing. The generating of OTP for MFA was
-implemented with the help of the PyOTP library. The bcrypt library was used in the
-process of password hashing. The sqlite3 library was used to store and read data
-from a database.
