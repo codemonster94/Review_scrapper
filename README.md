@@ -121,36 +121,18 @@ indicate that is using a legitimate website. The
 phrase cal also be saved to user account and visible
 on every notification sent.
   
-  ##Risk assessment
-The following table proposes how this tech stack would help prevent some common
-cyber security risks
-Risk scenario Detection
-method Mitigation method
-Ransom - attacker
-took over one
-application and
-edited code to
-redirect users to
-malicious website
-Number of users
-using the
-application
-suddenly
-changed
-Application hosted online and distributed trough
-different cloud providers. In case of attack to one
-site, it can be taken down automatically or by staff
-while keeping the application alive
-Phishing targeting
-staff members
-staff performed
-suspicious
-activity
-Users would be able to set a small security phrase,
-saved and loaded from browser storage and
-presented on application interface all the time to
-indicate that is using a legitimate website. The
-phrase cal also be saved to user account and visible
-on every notification sent
-Additional ways of tackling risks to the
-system.
+## Additional ways of tackling risks to the
+system
+  
+  
+  Cyber security technologies that was implemented in the prototype solution include
+multi-factor authentication (MFA) via the use of a time-based one-time pin (OTP),
+and the encryption of user passwords using the combination of a randomly
+generated salt value and hashing. These techniques are used to verify and validate
+the user's identity and aim to prevent spoofing. The generating of OTP for MFA was
+implemented with the help of the PyOTP library. The bcrypt library was used in the
+process of password hashing. The sqlite3 library was used to store and read data
+from a database.
+  
+  
+  
