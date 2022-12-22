@@ -25,28 +25,7 @@ See risk assessments on the end of file.
 We create an environment for our project first of all. In order to create the environment,
 we run the following commands :
 
-## To create a virtual environment in the lunux environment, we need to install the library that helps in installation :
-pip install virtualenv
-To use venv in your project, in your terminal, create a new project folder, cd to the
-project folder in your terminal, and run the following command:
-python<version> -m venv <virtual-environment-name>
-Now that we have created our virtual environment, we need to activate our virtual
-environment using the following command:
-AMIS2source env/bin/activate # we navigate using command prompt to the env folder and
-then bin folder and run the command : “activate”
-Now we can start installing the relevant libraries and start working.
-After installing your required libraries, you can view all installed libraries by using pip list,
-or you can generate a text file listing all your project dependencies by running the code
-below:
-pip freeze > requirements.txt
-To recreate your development environment, your friend will just need to follow the above
-steps to activate a new virtual environment.
-Instead of having to install each dependency one by one, they could just run the code
-below to install all your dependencies within their own copy of the project:
-pip install -r requirements.txt
-To deactivate your virtual environment, simply run the following code in the terminal:
-   
-deactivate
+
   
  ### Follow steps in windows powershell for installation:
   
